@@ -1,0 +1,25 @@
+// containers
+.container-fluid{
+  padding: 0 10px;
+  max-width: 1465px;
+  margin: 0 auto;
+}
+.container{
+  padding: 0 10px;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+// flex
+.flex{
+  display: flex;
+}
+.space-between{
+  justify-content: space-between;
+}
+.align-center{
+  align-items: center;
+}
+.vertical{
+  flex-direction: column;
+}
