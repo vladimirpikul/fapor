@@ -16,6 +16,9 @@
     <!-- Slick slider -->
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 
+    <!-- Slick nav -->
+    <link rel="stylesheet" href="css/slicknav.css" />
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -23,31 +26,33 @@
 </head>
 <body>
 <header>
-    <div class="header-wrap container-fluid flex space-between align-center">
+    <div class="header-wrap container-fluid flex space-between">
         <a class="logo flex align-center" href="#">
             <img src="img/logo-icon.png" alt="">
             <span>Fapor</span>
         </a>
-        <ul class="header-nav flex">
-            <li><a href="">home</a></li>
-            <li><a href="">about</a></li>
-            <li><a href="">service</a></li>
-            <li><a href="">portfolio</a></li>
-            <li><a href="">contact</a></li>
-        </ul>
+        <nav>
+            <ul id="header-nav" class="flex">
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">service</a></li>
+                <li><a href="">portfolio</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 <main>
-    <section class="title">
+    <section class="page-title">
         <div class="section-title-wrap">
             <div class="container-fluid">
-                <h1>more about us</h1>
+                <h1 class="page-title-text">more about us</h1>
             </div>
         </div>
     </section>
     <section class="management">
         <div class="container">
-            <h2>management</h2>
+            <h2 class="management-title-text">management</h2>
             <div class="management-items-block flex space-between">
                 <div class="management-item">
                     <img src="img/img-1.jpg" alt="">
@@ -92,12 +97,12 @@
                     </div>
                 </div>
             </div>
-            <button class="show-all">show all</button>
+            <button class="btn-default show-all">show all</button>
         </div>
     </section>
     <section class="clients">
         <div class="container">
-            <h2>WHAT OUR CLIENTS SAY</h2>
+            <h2 class="clients-title-text">what our clients say</h2>
             <div class="slider-wrap">
                 <i class="fas fa-chevron-left"></i>
                 <div class="slick-slider">
@@ -136,40 +141,42 @@
             </div>
         </div>
     </section>
+</main>
+<footer>
     <section class="technical">
         <div class="technical-blocks-wrap container flex space-between">
             <div class="about technical-block">
-                <span class="title">ABOUT FAPOR</span>
+                <span class="footer-title">ABOUT FAPOR</span>
                 <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful.</p>
             </div>
             <div class="contacts technical-block">
-                <span class="title">Contact INFO</span>
+                <span class="footer-title">Contact INFO</span>
                 <p>PO Box 17122 Nollins Street<br>
                     5034 Los Angelos
                 </p>
-                <p>Phone: 1800555.0658<br>
-                    Email: support@fapor.com<br>
+                <p><a href="tel:1800555.0658">Phone: 1800555.0658</a><br>
+                    <a href="mailto:support@fapor.com">Email: support@fapor.com</a><br>
                     Web: fapor.com
                 </p>
             </div>
-            <div class="subscribe technical-block">
-                <span class="title">Subscribe to our newsletter</span>
+            <form class="subscribe technical-block">
+                <span class="footer-title">Subscribe to our newsletter</span>
                 <input type="text" placeholder="Enter your email address">
-                <button type="submit">subscribe now</button>
-            </div>
+                <button class="btn-submit" type="submit">subscribe now</button>
+            </form>
         </div>
     </section>
-</main>
-<footer>
-    <div class="footer-content-wrap container flex space-between align-center">
-        <span class="copyright">© 2016  Fapor by Respotheme</span>
-        <div class="social">
-            <span><i class="fab fa-facebook-f"></i></span>
-            <span><i class="fab fa-twitter"></i></span>
-            <span><i class="fab fa-google-plus-g"></i></span>
-            <span><i class="fab fa-dribbble"></i></span>
+    <section class="copyright">
+        <div class="copyright-section-wrap container flex space-between align-center">
+            <span class="copyright-text">© 2016  Fapor by Respotheme</span>
+            <nav class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-google-plus-g"></i></a>
+                <a href=""><i class="fab fa-dribbble"></i></a>
+            </nav>
         </div>
-    </div>
+    </section>
 </footer>
 
 <!-- jQuery -->
