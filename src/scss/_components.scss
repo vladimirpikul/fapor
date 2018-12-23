@@ -1,6 +1,7 @@
 // buttons
 button{
   &.btn-default{
+    background-color: $white;
     text-transform: uppercase;
     padding: 15px 40px;
     border: 1px solid $darkBlue;
